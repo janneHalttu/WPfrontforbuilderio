@@ -2,6 +2,12 @@
 
 Public Builder.io plugin that adds a WordPress-style **New Article** writing workflow with SEO-focused fields.
 
+## Dashboard Preview
+
+![WPfrontforbuilderio dashboard preview](docs/dashboard-render.svg)
+
+This preview shows the target WordPress-style writing layout, SEO panel, visual settings, and publishing sidebar.
+
 ## Features
 
 - `New Article` main tab inside Builder editor
