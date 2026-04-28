@@ -1,12 +1,31 @@
 {
   "name": "wpfrontforbuilderio",
-  "version": "1.0.0",
-  "private": false,
-  "description": "Public Builder.io plugin with a New Article button, WordPress-like editor layout, visual style controls, and SEO fields.",
+  "version": "1.1.0",
+  "description": "Builder.io WP-style article writing plugin with New Article flow and SEO-focused fields.",
+  "entry": "plugin",
+  "output": "plugin.system.js",
   "main": "dist/plugin.system.js",
+  "unpkg": "dist/plugin.system.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "builderio",
+    "builder-plugin",
+    "wordpress",
+    "seo",
+    "cms"
+  ],
   "license": "MIT",
+  "private": false,
   "scripts": {
-    "serve": "python -m http.server 9000",
-    "build": "echo \"dist/plugin.system.js is shipped as runtime entry\""
+    "build": "echo \"dist/plugin.system.js is ready for publishing\"",
+    "serve": "python -m http.server 9000"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
