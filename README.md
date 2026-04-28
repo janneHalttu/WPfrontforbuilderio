@@ -28,7 +28,7 @@ Use these exact values in Builder plugin setup forms.
 ### If the field says `NPM Package name`
 
 ```text
-wpfrontforbuilderio@1.1.0
+wpfrontforbuilderio@1.1.1
 ```
 
 You can also use latest:
@@ -42,7 +42,7 @@ wpfrontforbuilderio
 Recommended (npm CDN, pinned version):
 
 ```text
-https://cdn.jsdelivr.net/npm/wpfrontforbuilderio@1.1.0/dist/plugin.system.js?pluginId=builder-new-article-public-plugin
+https://cdn.jsdelivr.net/npm/wpfrontforbuilderio@1.1.1/dist/plugin.system.js?pluginId=builder-new-article-public-plugin
 ```
 
 Alternative (GitHub CDN):
