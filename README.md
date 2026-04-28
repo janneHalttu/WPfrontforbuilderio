@@ -21,63 +21,48 @@ This preview shows the target WordPress-style writing layout, SEO panel, visual 
 
 `builder-new-article-public-plugin`
 
-## Install in Builder from npm package
+## Builder install values (copy/paste)
 
-After publishing this package to npm, open Builder:
+Use these exact values in Builder plugin setup forms.
 
-1. **Space Settings -> Plugins -> Edit**
-2. Add npm package path:
-
-```text
-wpfrontforbuilderio
-```
-
-You can also pin a version:
+### If the field says `NPM Package name`
 
 ```text
 wpfrontforbuilderio@1.1.0
 ```
 
-## Optional URL install (CDN)
-
-If needed, you can still install via direct URL:
+You can also use latest:
 
 ```text
-https://unpkg.com/wpfrontforbuilderio@latest/dist/plugin.system.js?pluginId=builder-new-article-public-plugin
+wpfrontforbuilderio
 ```
 
-or with jsDelivr:
+### If the field says `Plugin URL`
+
+Recommended (npm CDN, pinned version):
 
 ```text
-https://cdn.jsdelivr.net/npm/wpfrontforbuilderio@latest/dist/plugin.system.js?pluginId=builder-new-article-public-plugin
+https://cdn.jsdelivr.net/npm/wpfrontforbuilderio@1.1.0/dist/plugin.system.js?pluginId=builder-new-article-public-plugin
 ```
+
+Alternative (GitHub CDN):
+
+```text
+https://cdn.jsdelivr.net/gh/janneHalttu/WPfrontforbuilderio@main/dist/plugin.system.js?pluginId=builder-new-article-public-plugin
+```
+
+Note: do **not** use the GitHub repo clone URL (`.git`) in Builder plugin fields.
 
 ## Publish to npm
 
 From your local clone of this repository:
 
 ```bash
-npm login
+npm adduser
 npm publish --access public
 ```
 
-If the unscoped package name is already taken, switch to a scoped name in `package.json`, for example:
-
-```json
-"name": "@jannehalttu/wpfrontforbuilderio"
-```
-
-and publish with:
-
-```bash
-npm publish --access public
-```
-
-Then use this in Builder:
-
-```text
-@jannehalttu/wpfrontforbuilderio
-```
+If npm returns `E403` with 2FA requirement, publish with a granular token that has write access and bypass 2FA enabled.
 
 ## Recommended fields in your Builder Data Model
 
