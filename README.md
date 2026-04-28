@@ -15,18 +15,63 @@ Public Builder.io plugin that adds a WordPress-style **New Article** writing wor
 
 `builder-new-article-public-plugin`
 
-## Install in Builder via GitHub CDN
+## Install in Builder from npm package
 
-1. Push this repo to branch `main`.
-2. In Builder: **Space Settings -> Plugins**.
-3. Add plugin URL:
+After publishing this package to npm, open Builder:
+
+1. **Space Settings -> Plugins -> Edit**
+2. Add npm package path:
 
 ```text
-https://cdn.jsdelivr.net/gh/janneHalttu/WPfrontforbuilderio@main/dist/plugin.system.js?pluginId=builder-new-article-public-plugin
+wpfrontforbuilderio
 ```
 
-4. Save and reload Builder.
-5. Open a `blog-post` style entry and click the `New Article` tab.
+You can also pin a version:
+
+```text
+wpfrontforbuilderio@1.1.0
+```
+
+## Optional URL install (CDN)
+
+If needed, you can still install via direct URL:
+
+```text
+https://unpkg.com/wpfrontforbuilderio@latest/dist/plugin.system.js?pluginId=builder-new-article-public-plugin
+```
+
+or with jsDelivr:
+
+```text
+https://cdn.jsdelivr.net/npm/wpfrontforbuilderio@latest/dist/plugin.system.js?pluginId=builder-new-article-public-plugin
+```
+
+## Publish to npm
+
+From your local clone of this repository:
+
+```bash
+npm login
+npm publish --access public
+```
+
+If the unscoped package name is already taken, switch to a scoped name in `package.json`, for example:
+
+```json
+"name": "@jannehalttu/wpfrontforbuilderio"
+```
+
+and publish with:
+
+```bash
+npm publish --access public
+```
+
+Then use this in Builder:
+
+```text
+@jannehalttu/wpfrontforbuilderio
+```
 
 ## Recommended fields in your Builder Data Model
 
