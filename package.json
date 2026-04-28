@@ -1,0 +1,12 @@
+{
+  "name": "wpfrontforbuilderio",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Public Builder.io plugin with a New Article button, WordPress-like editor layout, visual style controls, and SEO fields.",
+  "main": "dist/plugin.system.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "python -m http.server 9000",
+    "build": "echo \"dist/plugin.system.js is shipped as runtime entry\""
+  }
+}
